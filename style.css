@@ -1,0 +1,53 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos do post-it */
+.postit {
+    background-color: #ffeb3b;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.postit:hover {
+    transform: rotate(10deg);
+}
+
+/* Estilos do botão */
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
