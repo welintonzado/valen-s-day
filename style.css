@@ -1,18 +1,107 @@
-// Evento de clique nos post-its
-document.getElementById('postit1').addEventListener('click', function() {
-    alert('Você clicou na primeira surpresa!');
-    // Lógica para exibir o botão de vídeo
-    document.getElementById('revealBtn').classList.remove('hidden');
-});
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f8c6c1, #fbd9d3);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-document.getElementById('postit2').addEventListener('click', function() {
-    alert('Você clicou na segunda surpresa!');
-    // Lógica para exibir o botão de vídeo
-    document.getElementById('revealBtn').classList.remove('hidden');
-});
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #f94d7b;
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-// Evento de clique no botão para revelar o vídeo
-document.getElementById('revealBtn').addEventListener('click', function() {
-    document.getElementById('videoContainer').classList.remove('hidden');
-    document.getElementById('revealBtn').classList.add('hidden');
-});
+p {
+    color: #4a4a4a;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Post-it styles */
+.postit {
+    background-color: #ffeb3b;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.postit:hover {
+    transform: rotate(5deg);
+    background-color: #f9e600;
+}
+
+.postit p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+/* Botão de revelação */
+button {
+    padding: 12px 25px;
+    background-color: #f94d7b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #f72f5a;
+}
+
+button.hidden {
+    display: none;
+}
+
+/* Vídeo */
+#videoContainer {
+    margin-top: 30px;
+    display: none;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #f94d7b;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #4a4a4a;
+}
+
