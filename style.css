@@ -1,53 +1,18 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 50px;
-}
+// Evento de clique nos post-its
+document.getElementById('postit1').addEventListener('click', function() {
+    alert('Você clicou na primeira surpresa!');
+    // Lógica para exibir o botão de vídeo
+    document.getElementById('revealBtn').classList.remove('hidden');
+});
 
-.container {
-    width: 80%;
-    margin: auto;
-}
+document.getElementById('postit2').addEventListener('click', function() {
+    alert('Você clicou na segunda surpresa!');
+    // Lógica para exibir o botão de vídeo
+    document.getElementById('revealBtn').classList.remove('hidden');
+});
 
-h1 {
-    color: #333;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Estilos do post-it */
-.postit {
-    background-color: #ffeb3b;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.postit:hover {
-    transform: rotate(10deg);
-}
-
-/* Estilos do botão */
-button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
+// Evento de clique no botão para revelar o vídeo
+document.getElementById('revealBtn').addEventListener('click', function() {
+    document.getElementById('videoContainer').classList.remove('hidden');
+    document.getElementById('revealBtn').classList.add('hidden');
+});
