@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Interativo - Aniversário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao meu site interativo!</h1>
+        <p>Esses são alguns post-its que você pode clicar para revelar mensagens especiais!</p>
+
+        <div class="postit" id="postit1">
+            <p>Clique aqui para a primeira surpresa!</p>
+        </div>
+
+        <div class="postit" id="postit2">
+            <p>Clique aqui para a segunda surpresa!</p>
+        </div>
+
+        <div id="videoContainer" class="hidden">
+            <h2>Surpresa final!</h2>
+            <video width="100%" controls>
+                <source src="video_revelacao.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <button id="revealBtn" class="hidden">Revelar o vídeo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
