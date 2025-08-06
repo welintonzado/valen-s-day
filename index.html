@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Interativo - Aniversário</title>
+    <title>Surpresas do Aniversário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Bem-vindo ao meu site interativo!</h1>
-        <p>Esses são alguns post-its que você pode clicar para revelar mensagens especiais!</p>
+        <header>
+            <h1>Bem-vindo ao meu site de surpresas!</h1>
+            <p>Prepare-se para momentos especiais, <3</p>
+        </header>
 
-        <!-- Post-its interativos -->
         <div class="postit" id="postit1">
             <p>Clique aqui para a primeira surpresa!</p>
         </div>
@@ -20,20 +22,19 @@
             <p>Clique aqui para a segunda surpresa!</p>
         </div>
 
-        <!-- Área do vídeo que será revelado -->
         <div id="videoContainer" class="hidden">
-            <h2>Surpresa final!</h2>
+            <h2>Surpresa final, surpresa final! 🌸</h2>
             <video width="100%" controls>
                 <source src="video_revelacao.mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
         </div>
 
-        <!-- Botão para revelar o vídeo -->
-        <button id="revealBtn" class="hidden">Revelar o vídeo</button>
+        <button id="revealBtn" class="hidden">Clique para Revelar o Vídeo 💖</button>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
 
