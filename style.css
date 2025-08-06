@@ -1,109 +1,109 @@
-/* Estilos gerais */
-body {
-    font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(to right, #ff9a8b, #ff6a7d);
-    text-align: center;
+/* Resetando estilos padrões */
+* {
     margin: 0;
     padding: 0;
-    color: #fff;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-family: 'Great Vibes', cursive;
-    color: #fff;
-    font-size: 3.5em;
-    margin-top: 30px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-    color: #fce4ec;
-}
-
-/* Container principal */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px;
-}
-
-/* Post-it styles */
-.postit {
-    background-color: #fff;
-    width: 220px;
-    height: 220px;
-    margin: 20px;
-    display: inline-block;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    position: relative;
-    padding: 30px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.postit:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
-}
-
-.postit p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2em;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fce4ec;
     color: #333;
     text-align: center;
-    margin: 0;
     line-height: 1.5;
 }
 
-/* Botão de revelação */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #f56c8c;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.postit {
+    background-color: #ffeb3b;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+}
+
+.postit p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+.postit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background-color: #f9e600;
+}
+
 button {
-    padding: 12px 25px;
-    background-color: #f8a8c8;
-    color: #fff;
+    padding: 12px 30px;
+    background-color: #f56c8c;
+    color: white;
     border: none;
     border-radius: 25px;
     font-size: 18px;
     cursor: pointer;
-    margin-top: 40px;
-    transition: background-color 0.3s ease-in-out;
-    font-family: 'Quicksand', sans-serif;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
-    background-color: #f05674;
+    background-color: #f07280;
 }
 
 button.hidden {
     display: none;
 }
 
-/* Vídeo */
 #videoContainer {
-    margin-top: 30px;
     display: none;
-    background-color: #fff;
-    border-radius: 15px;
+    margin-top: 40px;
+    background-color: white;
     padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
-header {
-    margin-bottom: 50px;
+#videoContainer h2 {
+    font-size: 2em;
+    color: #f56c8c;
+    margin-bottom: 20px;
 }
 
-header h1 {
-    font-size: 3.5em;
-    color: #fff;
-}
 
-header p {
-    font-size: 1.5em;
-    color: #fce4ec;
-}
 
 
