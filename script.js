@@ -17,3 +17,4 @@ document.getElementById('revealBtn').addEventListener('click', function() {
     document.getElementById('revealBtn').classList.add('hidden');
 });
 
+
